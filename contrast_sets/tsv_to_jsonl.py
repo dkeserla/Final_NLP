@@ -1,3 +1,5 @@
+# Created using ChatGPT
+
 import json
 
 # Open the TSV file for reading and the JSONL file for writing

@@ -1,3 +1,5 @@
+# Created using ChatGPT
+
 import json
 
 with open("./eval_output/incorrect.jsonl", "r") as input_file, open("./eval_output/output.jsonl", "w") as output_file:
