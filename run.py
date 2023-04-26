@@ -46,6 +46,7 @@ def main():
                       help='Limit the number of examples to train on.')
     argp.add_argument('--max_eval_samples', type=int, default=None,
                       help='Limit the number of examples to evaluate on.')
+    argp.add_argument('--train_num', type=str, default=None, help="""train num""")
 
     training_args, args = argp.parse_args_into_dataclasses()
 
@@ -59,7 +60,7 @@ def main():
         # from the loaded dataset
         eval_split = 'train'
     else:
-        default_datasets = {'qa': ('squad',), 'nli': ('snli',)}
+        default_datasets = {'qa': ('squad',), 'nli': ('snli',), 'anli': ('anli',)}
         dataset_id = tuple(args.dataset.split(':')) if args.dataset is not None else \
             default_datasets[args.task]
         # MNLI has two validation splits (one with matched domains and one with mismatched domains). Most datasets just have one "validation" split
@@ -90,16 +91,23 @@ def main():
         raise ValueError('Unrecognized task name: {}'.format(args.task))
 
     print("Preprocessing data... (this takes a little bit, should only happen once per dataset)")
-    if dataset_id == ('snli',):
+    if dataset_id == ('snli',) or dataset_id == ('anli',):
         # remove SNLI examples with no label
         dataset = dataset.filter(lambda ex: ex['label'] != -1)
-    
+
     train_dataset = None
     eval_dataset = None
     train_dataset_featurized = None
     eval_dataset_featurized = None
     if training_args.do_train:
-        train_dataset = dataset['train']
+        training_data = 'train'
+        if dataset_id == ('anli',):
+            if args.train_num == None:
+                training_data += "_r1"        
+            else:
+                training_data += "_" + args.train_num
+        train_dataset = dataset[training_data]
+        print(train_dataset)
         if args.max_train_samples:
             train_dataset = train_dataset.select(range(args.max_train_samples))
         train_dataset_featurized = train_dataset.map(
@@ -109,6 +117,10 @@ def main():
             remove_columns=train_dataset.column_names
         )
     if training_args.do_eval:
+        # if args.train_num == None:
+        #     eval_split = "test_r1"        
+        # else:
+        #     eval_split = "test_" + args.train_num
         eval_dataset = dataset[eval_split]
         if args.max_eval_samples:
             eval_dataset = eval_dataset.select(range(args.max_eval_samples))

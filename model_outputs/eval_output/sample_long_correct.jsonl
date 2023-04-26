@@ -1,0 +1,25 @@
+{"premise": "A girl is working on some sort of lab experiment while another girl watches with a bored expression.", "hypothesis": "A girl is working on a lab experiment.", "label": 0}
+{"premise": "A smiling young man is standing indoors with his left foot on a blue-wheeled child's scooter and his right foot on a yellow-wheeled child's scooter.", "hypothesis": "A young man is standing on two scooters.", "label": 0}
+{"premise": "This young man is wearing blue jeans and a cowboy hat, and is walking away from a calf that is currently roped within an arena.", "hypothesis": "A person in jeans", "label": 0}
+{"premise": "A man with a beard, curly hair and a beard wearing a green shirt and navy blue jacket standing still looking through his red sunglasses.", "hypothesis": "A man has a walking stick.", "label": 1}
+{"premise": "Four construction workers, wearing neon vests, stand at a construction site along with some equipment.", "hypothesis": "The construction workers are at work.", "label": 0}
+{"premise": "Several people are walking on a street and there is a large, blue crane towering and leaning against a building.", "hypothesis": "Several people are sitting on the grass, watching a crane move heavy blocks.", "label": 2}
+{"premise": "A little girl with a hat sits between a woman's feet in the sand in front of a pair of colorful tents.", "hypothesis": "The girl is wearing a hat.", "label": 0}
+{"premise": "A bearded man in a light blue shirt peers through a magnifier to work on something that rests on a white paper box.", "hypothesis": "a man peers through a magnifier", "label": 0}
+{"premise": "A crowd of people in a lightly snow covered opening with trees to the left and buildings in the background.", "hypothesis": "The people are inside a concert hall.", "label": 2}
+{"premise": "A girl in green is running behind a boy in red in a sports arena whilst a girl in pink is running in the background.", "hypothesis": "Some kids are running in an arena.", "label": 0}
+{"premise": "Several people, including a boy in a striped shirt walk on a concrete path away from a body of water.", "hypothesis": "People walking away from the water.", "label": 0}
+{"premise": "As a referee looks on, a Los Angeles baseball player is falling over the top of a rival player who is just sliding into base.", "hypothesis": "People are playing baseball.", "label": 0}
+{"premise": "A young boy, wearing a helmet, in shorts and a t-shirt and a pair of binoculars around his neck is playing outside.", "hypothesis": "A boy is outside.", "label": 0}
+{"premise": "A schoolgirl wearing a white dress, blue-striped knee socks, a blue tie, and braids, smiles in front of a line of her classmates.", "hypothesis": "A smiling schoolgirl leads the her line of classmates.", "label": 0}
+{"premise": "A man in a brown jacket, white shirt, and dark slacks is holding a book with his finger on the page while sitting on a wooden floor, and leaning against a yellow wall with a door on one side and cloths on hangers on the other side.", "hypothesis": "A man sits on a wooden floor building a model ship.", "label": 2}
+{"premise": "A young man and a young women in white lab coats are reading a biology textbook together and looking at a microscope in a laboratory.", "hypothesis": "Two students are creating a deadly bomb in order to destroy an entire country.", "label": 2}
+{"premise": "Three girls are standing together in a room, one is listening, one is writing on a wall and the third is talking to them.", "hypothesis": "The girls are outdoors.", "label": 2}
+{"premise": "A group of friends stand around at night while one in a brown coat blows bubbles from a blue container.", "hypothesis": "A group of friends are standing around together.", "label": 0}
+{"premise": "Two men sitting on horses one wearing a cowboy hat, the other in a baseball cap, with a big tree behind them.", "hypothesis": "Two men are on horses.", "label": 0}
+{"premise": "A male soccer player has his foot extended as if he has just kicked the soccer ball while the ball flies through the air.", "hypothesis": "The man has kicked the soccer ball towards the goal.", "label": 1}
+{"premise": "A topless man with tattoos, black pants, and black boots is standing on a platform in front of a mirror.", "hypothesis": "the man is lying on the roof", "label": 2}
+{"premise": "There is a woman here in a children's room, wearing a red vest, with her hand in a fake sharks mouth.", "hypothesis": "The children's room is empty.", "label": 2}
+{"premise": "Two women in a embrace of greetings, one of them is holding flowers and they are greeting each other of a kiss.", "hypothesis": "Two women yelling at eachother while walking down the street.", "label": 2}
+{"premise": "A man and woman in a dark room with lights behind them holding drinks while a bright green light shines in their faces.", "hypothesis": "A man and woman are married", "label": 1}
+{"premise": "Three women wearing belly dancing costumes are pictured in color while the background of the shot is in black and white.", "hypothesis": "three women wear belly dancing costumes", "label": 0}
