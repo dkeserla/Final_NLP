@@ -1,6 +1,8 @@
-# Starter code for final project for CS 378 -- dataset artifact 
+# Dataset Artifact Analysis 
 
-Credit: Project by Kaj Bostrom, Jifan Chen, and Greg Durrett. Code by Kaj Bostrom and Jifan Chen.
+Modified and Updated by Dinesh Keserla and Sashank Meka.
+
+Starter Code Credit: Project by Kaj Bostrom, Jifan Chen, and Greg Durrett. Code by Kaj Bostrom and Jifan Chen.
 
 ## Getting Started
 You'll need Python >= 3.6 to run the code in this repo.
